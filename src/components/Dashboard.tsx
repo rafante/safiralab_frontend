@@ -9,10 +9,10 @@ export default class Dashboard extends Component {
       <Container fluid>
         <Grid padded divided columns={2} style={{ height: "100vh" }}>
           <Grid.Row style={{ height: "100%" }} stretched>
-            <Grid.Column color="blue" width={3}>
+            <Grid.Column width={3}>
               <MenuLateral />
             </Grid.Column>
-            <Grid.Column stretched color="blue" width={13}>
+            <Grid.Column stretched width={13}>
               <Grid.Row color="red">
                 <div className="branco" style={{ height: "10%" }}>
                   <MenuTopo />

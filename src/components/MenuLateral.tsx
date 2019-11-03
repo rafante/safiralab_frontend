@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Accordion, Icon } from "semantic-ui-react";
 
-export default class AccordionExampleStyled extends Component {
+export default class AccordionExampleStandard extends Component {
   state = { activeIndex: 0 };
 
   handleClick = (e: any, titleProps: any) => {
@@ -16,18 +16,16 @@ export default class AccordionExampleStyled extends Component {
     const { activeIndex } = this.state;
 
     return (
-      <Accordion styled>
+      <Accordion>
         <Accordion.Title
           active={activeIndex === 0}
           index={0}
           onClick={this.handleClick}
         >
           <Icon name="dropdown" />
-          What is a dog?
+          inicio
         </Accordion.Title>
-        <Accordion.Content active={activeIndex === 0}>
-          
-        </Accordion.Content>
+        <Accordion.Content active={activeIndex === 0} />
 
         <Accordion.Title
           active={activeIndex === 1}
@@ -35,14 +33,12 @@ export default class AccordionExampleStyled extends Component {
           onClick={this.handleClick}
         >
           <Icon name="dropdown" />
-          What kinds of dogs are there?
+          Cadastro
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 1}>
-          <p>
-            There are many breeds of dogs. Each breed varies in size and
-            temperament. Owners often select a breed of dog that they find to be
-            compatible with their own lifestyle and desires from a companion.
-          </p>
+          <p>Parceiro de negocios</p>
+          <p>Empresa</p>
+          <p>Grupo de Parceiro</p>
         </Accordion.Content>
 
         <Accordion.Title
@@ -51,20 +47,12 @@ export default class AccordionExampleStyled extends Component {
           onClick={this.handleClick}
         >
           <Icon name="dropdown" />
-          How do you acquire a dog?
+          Estoque
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 2}>
-          <p>
-            Three common ways for a prospective owner to acquire a dog is from
-            pet shops, private owners, or shelters.
-          </p>
-          <p>
-            A pet shop may be the most convenient way to buy a dog. Buying a dog
-            from a private owner allows you to assess the pedigree and
-            upbringing of your dog before choosing to take it home. Lastly,
-            finding your dog from a shelter, helps give a good home to a dog who
-            may not find one so readily.
-          </p>
+          <p>Material</p>
+          <p>Entrada de Material</p>
+          <p>Movimento de Material</p>
         </Accordion.Content>
       </Accordion>
     );
