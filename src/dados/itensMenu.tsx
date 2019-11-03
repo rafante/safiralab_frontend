@@ -1,85 +1,107 @@
-const Modulos = {
-    'cadastro': [
-        'empresa',
-        'parceiroNegocios',
-        'grupoParceiro',
-        'subgrupoParceiro',
-        'centroCusto',
-        'planoContas',
-        'formaPagamento',
-        'prazoPagamento',
-        'tipoDocumento',
-        'municipio',
-        'setor',
-    ],
-    'estoque': [
-        'material',
-        'entradaMaterial',
-        'movimentoMaterial',
-        'unidadeMedida',
-        'grupo',
-        'subGrupo',
-        'localizacao',
-        'recipiente',
-        'importacao',
-    ],
-    'financeiro': [
-        'contaPagar',
-        'baixaEmBlocoPagar',
-        'contaReceber',
-        'baixaEmBlocoReceber',
-        'banco',
-        'historicoPadrao',
-        'contaCorrente',
-        'transferenciaContas',
-        'movimentoFinanceiro',
-        'boleto',
-        'arquivoRemessa',
-    ],
-    'exame': [
-        'exame',
-        'movimentoExame',
-        'materiaisExame',
-        'importarXML',
-    ],
-    'esmeraldaVisual': [
-        'importCaixaEV',
-        'importNFe',
-        'importFaturas',
-        'importMoviExame',
-    ],
-    'relatorios': [
-        'composicaoMaterial',
-        'materiais',
-        'inventario',
-        'estoqueMinimo',
-        'estoqueCentroCusto',
-        'movimentacaoMaterial',
-        'movimentacaoMaterialSinetico',
-        'contaPagarAnalitico',
-        'contaReceberAnalitico',
-        'relacaoCliente',
-        'movimentacaoFinanceira',
-        'listPlanoContas',
-        'balancete',
-        'materialUtilizados',
+const Modulos = [
+    {
+        nome: 'cadastro',
+        contextos: [
+            'empresa',
+            'parceiroNegocios',
+            'grupoParceiro',
+            'subgrupoParceiro',
+            'centroCusto',
+            'planoContas',
+            'formaPagamento',
+            'prazoPagamento',
+            'tipoDocumento',
+            'municipio',
+            'setor',
+        ]
+    },
+    {
+        nome: 'estoque',
+        contextos: [
+            'material',
+            'entradaMaterial',
+            'movimentoMaterial',
+            'unidadeMedida',
+            'grupo',
+            'subGrupo',
+            'localizacao',
+            'recipiente',
+            'importacao',
+        ]
+    },
+    {
+        nome: 'financeiro',
+        contextos: [
+            'contaPagar',
+            'baixaEmBlocoPagar',
+            'contaReceber',
+            'baixaEmBlocoReceber',
+            'banco',
+            'historicoPadrao',
+            'contaCorrente',
+            'transferenciaContas',
+            'movimentoFinanceiro',
+            'boleto',
+            'arquivoRemessa',
+        ]
+    },
+    {
+        nome: 'exame',
+        contextos: [
+            'exame',
+            'movimentoExame',
+            'materiaisExame',
+            'importarXML',
+        ]
+    },
+    {
+        nome: 'esmeraldaVisual',
+        contextos: [
+            'importCaixaEV',
+            'importNFe',
+            'importFaturas',
+            'importMoviExame',
+        ]
+    },
+    {
+        nome: 'relatorios',
+        contextos: [
+            'composicaoMaterial',
+            'materiais',
+            'inventario',
+            'estoqueMinimo',
+            'estoqueCentroCusto',
+            'movimentacaoMaterial',
+            'movimentacaoMaterialSinetico',
+            'contaPagarAnalitico',
+            'contaReceberAnalitico',
+            'relacaoCliente',
+            'movimentacaoFinanceira',
+            'listPlanoContas',
+            'balancete',
+            'materialUtilizados',
+        ]
+    },
+    {
+        nome: 'seguranca',
+        contextos: [
+            'usiario',
 
-    ],
-    'seguranca': [
-        'usiario',
+        ]
+    },
+    {
+        nome: 'configuracao',
+        contextos: [
+            'periodicidade',
+            'parametrosMateriais',
+            'parametrosGerais',
+            'parametrosFinanceiros',
+            'parametrosEV',
+            'correcoes',
 
-    ],
-    'configuracao': [
-        'periodicidade',
-        'parametrosMateriais',
-        'parametrosGerais',
-        'parametrosFinanceiros',
-        'parametrosEV',
-        'correcoes',
 
-
-    ],
-}
+        ],
+    }]
 
 
 
